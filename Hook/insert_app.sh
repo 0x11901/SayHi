@@ -13,7 +13,7 @@ optool install -c load -p @executable_path/lib.dylib -t "./${path}/Contents/MacO
 
 rm -f ${temp}.m
 
-# 使用unsign或者optool效果可能更好，codesign --remove-signature 在删除代码签名之后没有修复MachO Header的偏移，导致生成的MachO文件畸形
+# 使用unsign效果可能更好，codesign --remove-signature 在删除代码签名之后没有修复MachO Header的偏移，导致生成的MachO文件畸形
 # codesign --remove-signature ${name}
 if [ ! -e "./${path}/Contents/MacOS/${name}.ori" ]; then
     unsign "./${path}/Contents/MacOS/${name}"
