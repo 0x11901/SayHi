@@ -16,6 +16,12 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)SayHi:(NSButton *)sender {
+    NSAlert *alert = NSAlert.new;
+    alert.messageText = @"hi!";
+    alert.alertStyle = NSAlertStyleInformational;
+    [alert runModal];
+}
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];

@@ -273,6 +273,7 @@
 				DEVELOPMENT_TEAM = 8QAM996SBN;
 				INFOPLIST_FILE = SayHi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = wjk930726.SayHi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -288,6 +289,7 @@
 				DEVELOPMENT_TEAM = 8QAM996SBN;
 				INFOPLIST_FILE = SayHi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = wjk930726.SayHi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
