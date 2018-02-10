@@ -13,10 +13,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    int *a =malloc(sizeof(int));
+    *a = 0;
+    free(a);
     // Do any additional setup after loading the view.
 }
 
-- (IBAction)SayHi:(NSButton *)sender {
+- (IBAction)sayHi:(NSButton *)sender {
     NSAlert *alert = NSAlert.new;
     alert.messageText = @"hi!";
     alert.alertStyle = NSAlertStyleInformational;

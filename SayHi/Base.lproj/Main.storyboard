@@ -717,7 +717,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="SayHi:" target="XfG-lQ-9wD" id="n3G-qw-Nmo"/>
+                                    <action selector="sayHi:" target="XfG-lQ-9wD" id="8QE-b5-Zn6"/>
                                 </connections>
                             </button>
                         </subviews>
