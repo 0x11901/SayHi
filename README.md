@@ -11,7 +11,7 @@ Logos是[Theos](https://github.com/theos/theos)的一个组件，它允许程序
 2. [unsign](https://github.com/steakknife/unsign) (optional)
 
 ## 一个简单的例子
-* 编写一个简单的demo，大概就是软件正中一个按钮，点击之后alert("hi!")。核心代码如下：
+* 编写一个简单的demo，大概就是软件正中一个按钮，点击之后alert("hi!")。核心代码如下：
 
     ```objc
     #import "ViewController.h"
@@ -85,7 +85,7 @@ Logos是[Theos](https://github.com/theos/theos)的一个组件，它允许程序
 * 使用optool/insert_dylib往SayHi的MachO头部添加我们刚刚编译的lib.dylib
     `optool install -c load -p @executable_path/lib.dylib -t ./SayHi.app/Contents/MacOS/SayHi`
 
-如果你的Mac app没有签名的话，此时应该已经达成我们的需求了。但是实践中我们肯定不是对自己导出的未签名Mac app下黑手。所以需要去掉这个签名或重签名。因为笔者没有前买开发者账号，故不知道如何重签名。
+如果你的Mac app没有签名的话，此时应该已经达成我们的需求了。但是实践中我们肯定不是对自己导出的未签名Mac app下黑手。所以需要去掉这个签名或重签名。因为笔者没有钱买开发者账号，故不知道如何重签名。
 
 * 使用codesign去除签名
 `codesign --remove-signature SayHi.app `
