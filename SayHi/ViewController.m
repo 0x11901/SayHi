@@ -13,17 +13,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    int *a =malloc(sizeof(int));
-    *a = 0;
-    free(a);
     // Do any additional setup after loading the view.
 }
 
-- (IBAction)sayHi:(NSButton *)sender {
+- (IBAction)sayHi1:(NSButton *)sender {
     NSAlert *alert = NSAlert.new;
     alert.messageText = @"hi!";
     alert.alertStyle = NSAlertStyleInformational;
     [alert runModal];
+}
+
+- (IBAction)sayHi:(NSButton *)sender {
+    NSAlert *alert = NSAlert.new;
+    alert.messageText = getHi();
+    alert.alertStyle = NSAlertStyleInformational;
+    [alert runModal];
+}
+
+NSString* getHi() {
+    return @"hi!";
 }
 
 - (void)setRepresentedObject:(id)representedObject {
