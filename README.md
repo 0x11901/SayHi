@@ -91,7 +91,7 @@ Logos是[Theos](https://github.com/theos/theos)的一个组件，它允许程序
 `codesign --remove-signature SayHi.app `
 
 此时我们的需求已经达成
-![大成功](http://ooph3gs8p.bkt.clouddn.com/屏幕快照 2018-02-10 23.14.23.png)
+![大成功](http://ooph3gs8p.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-10%2023.14.23.png)
 但是codesign有一个bug，在删除代码签名之后没有修复MachO Header的偏移，会导致生成的MachO文件畸形。笔者曾经就遇见一个不到1m的小程序在移除签名后膨胀到2g大小。
 所以笔者建议使用开源社区的代替方案——[unsign](https://github.com/steakknife/unsign) 
 
