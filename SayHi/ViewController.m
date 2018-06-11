@@ -17,20 +17,20 @@
 }
 
 - (IBAction)sayHi1:(NSButton *)sender {
-    NSAlert *alert = NSAlert.new;
+    NSAlert *alert    = NSAlert.new;
     alert.messageText = @"hi!";
-    alert.alertStyle = NSAlertStyleInformational;
+    alert.alertStyle  = NSAlertStyleInformational;
     [alert runModal];
 }
 
 - (IBAction)sayHi:(NSButton *)sender {
-    NSAlert *alert = NSAlert.new;
+    NSAlert *alert    = NSAlert.new;
     alert.messageText = getHi();
-    alert.alertStyle = NSAlertStyleInformational;
+    alert.alertStyle  = NSAlertStyleInformational;
     [alert runModal];
 }
 
-NSString* getHi() {
+NSString *getHi() {
     return @"hi!";
 }
 
@@ -39,6 +39,5 @@ NSString* getHi() {
 
     // Update the view, if already loaded.
 }
-
 
 @end
