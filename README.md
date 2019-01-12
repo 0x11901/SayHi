@@ -15,7 +15,7 @@ Logos 是 [Theos](https://github.com/theos/theos) 的一个组件，它允许程
 
 ## 一个简单的例子
 
--   编写一个简单的 demo，大概就是  软件正中一个按钮，点击之后 alert("hi!")。核心代码如下：
+-   编写一个简单的 demo，大概就是软件正中一个按钮，点击之后 alert("hi!")。核心代码如下：
 
     ```objc
     #import "ViewController.h"
